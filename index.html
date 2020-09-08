@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -14,8 +14,7 @@
 <body>
     <div id="titre">
         <h1>Démineur</h1>
-        <p>Clic gauche de la souris pour découvrir ce qui se cache sous la case. Clic molette pour mettre un drapeau rouge.</p>
-        <p>(Clic gauche sur une case avec un drapeau rouge permet de découvrir ce qu'il y a en dessous !)</p>
+        <p>Clic gauche de la souris pour découvrir ce qui se cache sous la case. Clic droit pour mettre un drapeau rouge.</p>
         <p>Bonne chance !</p>
     </div>
 
@@ -25,127 +24,105 @@
         <button id="refreshBtn">Jouer</button>
     </div>
 
-
     <div id="gameDisplay">
         <div class="row">
-            <div class="case" id="c1l1"></div>
-            <div class="case" id="c2l1"></div>
-            <div class="case" id="c3l1"></div>
-            <div class="case" id="c4l1"></div>
-            <div class="case" id="c5l1"></div>
-            <div class="case" id="c6l1"></div>
-            <div class="case" id="c7l1"></div>
-            <div class="case" id="c8l1"></div>
-            <div class="case" id="c9l1"></div>
-            <div class="case" id="c10l1"></div>
+            <div class="case" id="a1"></div>
+            <div class="case" id="a2"></div>
+            <div class="case" id="a3"></div>
+            <div class="case" id="a4"></div>
+            <div class="case" id="a5"></div>
+            <div class="case" id="a6"></div>
+            <div class="case" id="a7"></div>
+            <div class="case" id="a8"></div>
+            <div class="case" id="a9"></div>
         </div>
         <div class="row">
-            <div class="case" id="c1l2"></div>
-            <div class="case" id="c2l2"></div>
-            <div class="case" id="c3l2"></div>
-            <div class="case" id="c4l2"></div>
-            <div class="case" id="c5l2"></div>
-            <div class="case" id="c6l2"></div>
-            <div class="case" id="c7l2"></div>
-            <div class="case" id="c8l2"></div>
-            <div class="case" id="c9l2"></div>
-            <div class="case" id="c10l2"></div>
+            <div class="case" id="b1"></div>
+            <div class="case" id="b2"></div>
+            <div class="case" id="b3"></div>
+            <div class="case" id="b4"></div>
+            <div class="case" id="b5"></div>
+            <div class="case" id="b6"></div>
+            <div class="case" id="b7"></div>
+            <div class="case" id="b8"></div>
+            <div class="case" id="b9"></div>
         </div>
         <div class="row">
-            <div class="case" id="c1l3"></div>
-            <div class="case" id="c2l3"></div>
-            <div class="case" id="c3l3"></div>
-            <div class="case" id="c4l3"></div>
-            <div class="case" id="c5l3"></div>
-            <div class="case" id="c6l3"></div>
-            <div class="case" id="c7l3"></div>
-            <div class="case" id="c8l3"></div>
-            <div class="case" id="c9l3"></div>
-            <div class="case" id="c10l3"></div>
+            <div class="case" id="c1"></div>
+            <div class="case" id="c2"></div>
+            <div class="case" id="c3"></div>
+            <div class="case" id="c4"></div>
+            <div class="case" id="c5"></div>
+            <div class="case" id="c6"></div>
+            <div class="case" id="c7"></div>
+            <div class="case" id="c8"></div>
+            <div class="case" id="c9"></div>
         </div>
         <div class="row">
-            <div class="case" id="c1l4"></div>
-            <div class="case" id="c2l4"></div>
-            <div class="case" id="c3l4"></div>
-            <div class="case" id="c4l4"></div>
-            <div class="case" id="c5l4"></div>
-            <div class="case" id="c6l4"></div>
-            <div class="case" id="c7l4"></div>
-            <div class="case" id="c8l4"></div>
-            <div class="case" id="c9l4"></div>
-            <div class="case" id="c10l4"></div>
+            <div class="case" id="d1"></div>
+            <div class="case" id="d2"></div>
+            <div class="case" id="d3"></div>
+            <div class="case" id="d4"></div>
+            <div class="case" id="d5"></div>
+            <div class="case" id="d6"></div>
+            <div class="case" id="d7"></div>
+            <div class="case" id="d8"></div>
+            <div class="case" id="d9"></div>
         </div>
         <div class="row">
-            <div class="case" id="c1l5"></div>
-            <div class="case" id="c2l5"></div>
-            <div class="case" id="c3l5"></div>
-            <div class="case" id="c4l5"></div>
-            <div class="case" id="c5l5"></div>
-            <div class="case" id="c6l5"></div>
-            <div class="case" id="c7l5"></div>
-            <div class="case" id="c8l5"></div>
-            <div class="case" id="c9l5"></div>
-            <div class="case" id="c10l5"></div>
+            <div class="case" id="e1"></div>
+            <div class="case" id="e2"></div>
+            <div class="case" id="e3"></div>
+            <div class="case" id="e4"></div>
+            <div class="case" id="e5"></div>
+            <div class="case" id="e6"></div>
+            <div class="case" id="e7"></div>
+            <div class="case" id="e8"></div>
+            <div class="case" id="e9"></div>
         </div>
         <div class="row">
-            <div class="case" id="c1l6"></div>
-            <div class="case" id="c2l6"></div>
-            <div class="case" id="c3l6"></div>
-            <div class="case" id="c4l6"></div>
-            <div class="case" id="c5l6"></div>
-            <div class="case" id="c6l6"></div>
-            <div class="case" id="c7l6"></div>
-            <div class="case" id="c8l6"></div>
-            <div class="case" id="c9l6"></div>
-            <div class="case" id="c10l6"></div>
+            <div class="case" id="f1"></div>
+            <div class="case" id="f2"></div>
+            <div class="case" id="f3"></div>
+            <div class="case" id="f4"></div>
+            <div class="case" id="f5"></div>
+            <div class="case" id="f6"></div>
+            <div class="case" id="f7"></div>
+            <div class="case" id="f8"></div>
+            <div class="case" id="f9"></div>
         </div>
         <div class="row">
-            <div class="case" id="c1l7"></div>
-            <div class="case" id="c2l7"></div>
-            <div class="case" id="c3l7"></div>
-            <div class="case" id="c4l7"></div>
-            <div class="case" id="c5l7"></div>
-            <div class="case" id="c6l7"></div>
-            <div class="case" id="c7l7"></div>
-            <div class="case" id="c8l7"></div>
-            <div class="case" id="c9l7"></div>
-            <div class="case" id="c10l7"></div>
+            <div class="case" id="g1"></div>
+            <div class="case" id="g2"></div>
+            <div class="case" id="g3"></div>
+            <div class="case" id="g4"></div>
+            <div class="case" id="g5"></div>
+            <div class="case" id="g6"></div>
+            <div class="case" id="g7"></div>
+            <div class="case" id="g8"></div>
+            <div class="case" id="g9"></div>
         </div>
         <div class="row">
-            <div class="case" id="c1l8"></div>
-            <div class="case" id="c2l8"></div>
-            <div class="case" id="c3l8"></div>
-            <div class="case" id="c4l8"></div>
-            <div class="case" id="c5l8"></div>
-            <div class="case" id="c6l8"></div>
-            <div class="case" id="c7l8"></div>
-            <div class="case" id="c8l8"></div>
-            <div class="case" id="c9l8"></div>
-            <div class="case" id="c10l8"></div>
+            <div class="case" id="h1"></div>
+            <div class="case" id="h2"></div>
+            <div class="case" id="h3"></div>
+            <div class="case" id="h4"></div>
+            <div class="case" id="h5"></div>
+            <div class="case" id="h6"></div>
+            <div class="case" id="h7"></div>
+            <div class="case" id="h8"></div>
+            <div class="case" id="h9"></div>
         </div>
         <div class="row">
-            <div class="case" id="c1l9"></div>
-            <div class="case" id="c2l9"></div>
-            <div class="case" id="c3l9"></div>
-            <div class="case" id="c4l9"></div>
-            <div class="case" id="c5l9"></div>
-            <div class="case" id="c6l9"></div>
-            <div class="case" id="c7l9"></div>
-            <div class="case" id="c8l9"></div>
-            <div class="case" id="c9l9"></div>
-            <div class="case" id="c10l9"></div>
-        </div>
-        <div class="row">
-            <div class="case" id="c1l10"></div>
-            <div class="case" id="c2l10"></div>
-            <div class="case" id="c3l10"></div>
-            <div class="case" id="c4l10"></div>
-            <div class="case" id="c5l10"></div>
-            <div class="case" id="c6l10"></div>
-            <div class="case" id="c7l10"></div>
-            <div class="case" id="c8l10"></div>
-            <div class="case" id="c9l10"></div>
-            <div class="case" id="c10l10"></div>
+            <div class="case" id="i1"></div>
+            <div class="case" id="i2"></div>
+            <div class="case" id="i3"></div>
+            <div class="case" id="i4"></div>
+            <div class="case" id="i5"></div>
+            <div class="case" id="i6"></div>
+            <div class="case" id="i7"></div>
+            <div class="case" id="i8"></div>
+            <div class="case" id="i9"></div>
         </div>
     </div>
 
