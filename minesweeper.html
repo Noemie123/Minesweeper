@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="libs/css/main.css">
+
+    <title>Démineur</title>
+</head>
+
+<body>
+    <div id="titre">
+        <h1>Démineur</h1>
+        <p>Clic gauche de la souris pour découvrir ce qui se cache sous la case. Clic molette pour mettre un drapeau rouge.</p>
+        <p>(Clic gauche sur une case avec un drapeau rouge permet de découvrir ce qu'il y a en dessous !)</p>
+        <p>Bonne chance !</p>
+    </div>
+
+    <div id="userMsg"></div>
+
+    <div id="replayDisplay">
+        <button id="refreshBtn">Jouer</button>
+    </div>
+
+
+    <div id="gameDisplay">
+        <div class="row">
+            <div class="case" id="c1l1"></div>
+            <div class="case" id="c2l1"></div>
+            <div class="case" id="c3l1"></div>
+            <div class="case" id="c4l1"></div>
+            <div class="case" id="c5l1"></div>
+            <div class="case" id="c6l1"></div>
+            <div class="case" id="c7l1"></div>
+            <div class="case" id="c8l1"></div>
+            <div class="case" id="c9l1"></div>
+            <div class="case" id="c10l1"></div>
+        </div>
+        <div class="row">
+            <div class="case" id="c1l2"></div>
+            <div class="case" id="c2l2"></div>
+            <div class="case" id="c3l2"></div>
+            <div class="case" id="c4l2"></div>
+            <div class="case" id="c5l2"></div>
+            <div class="case" id="c6l2"></div>
+            <div class="case" id="c7l2"></div>
+            <div class="case" id="c8l2"></div>
+            <div class="case" id="c9l2"></div>
+            <div class="case" id="c10l2"></div>
+        </div>
+        <div class="row">
+            <div class="case" id="c1l3"></div>
+            <div class="case" id="c2l3"></div>
+            <div class="case" id="c3l3"></div>
+            <div class="case" id="c4l3"></div>
+            <div class="case" id="c5l3"></div>
+            <div class="case" id="c6l3"></div>
+            <div class="case" id="c7l3"></div>
+            <div class="case" id="c8l3"></div>
+            <div class="case" id="c9l3"></div>
+            <div class="case" id="c10l3"></div>
+        </div>
+        <div class="row">
+            <div class="case" id="c1l4"></div>
+            <div class="case" id="c2l4"></div>
+            <div class="case" id="c3l4"></div>
+            <div class="case" id="c4l4"></div>
+            <div class="case" id="c5l4"></div>
+            <div class="case" id="c6l4"></div>
+            <div class="case" id="c7l4"></div>
+            <div class="case" id="c8l4"></div>
+            <div class="case" id="c9l4"></div>
+            <div class="case" id="c10l4"></div>
+        </div>
+        <div class="row">
+            <div class="case" id="c1l5"></div>
+            <div class="case" id="c2l5"></div>
+            <div class="case" id="c3l5"></div>
+            <div class="case" id="c4l5"></div>
+            <div class="case" id="c5l5"></div>
+            <div class="case" id="c6l5"></div>
+            <div class="case" id="c7l5"></div>
+            <div class="case" id="c8l5"></div>
+            <div class="case" id="c9l5"></div>
+            <div class="case" id="c10l5"></div>
+        </div>
+        <div class="row">
+            <div class="case" id="c1l6"></div>
+            <div class="case" id="c2l6"></div>
+            <div class="case" id="c3l6"></div>
+            <div class="case" id="c4l6"></div>
+            <div class="case" id="c5l6"></div>
+            <div class="case" id="c6l6"></div>
+            <div class="case" id="c7l6"></div>
+            <div class="case" id="c8l6"></div>
+            <div class="case" id="c9l6"></div>
+            <div class="case" id="c10l6"></div>
+        </div>
+        <div class="row">
+            <div class="case" id="c1l7"></div>
+            <div class="case" id="c2l7"></div>
+            <div class="case" id="c3l7"></div>
+            <div class="case" id="c4l7"></div>
+            <div class="case" id="c5l7"></div>
+            <div class="case" id="c6l7"></div>
+            <div class="case" id="c7l7"></div>
+            <div class="case" id="c8l7"></div>
+            <div class="case" id="c9l7"></div>
+            <div class="case" id="c10l7"></div>
+        </div>
+        <div class="row">
+            <div class="case" id="c1l8"></div>
+            <div class="case" id="c2l8"></div>
+            <div class="case" id="c3l8"></div>
+            <div class="case" id="c4l8"></div>
+            <div class="case" id="c5l8"></div>
+            <div class="case" id="c6l8"></div>
+            <div class="case" id="c7l8"></div>
+            <div class="case" id="c8l8"></div>
+            <div class="case" id="c9l8"></div>
+            <div class="case" id="c10l8"></div>
+        </div>
+        <div class="row">
+            <div class="case" id="c1l9"></div>
+            <div class="case" id="c2l9"></div>
+            <div class="case" id="c3l9"></div>
+            <div class="case" id="c4l9"></div>
+            <div class="case" id="c5l9"></div>
+            <div class="case" id="c6l9"></div>
+            <div class="case" id="c7l9"></div>
+            <div class="case" id="c8l9"></div>
+            <div class="case" id="c9l9"></div>
+            <div class="case" id="c10l9"></div>
+        </div>
+        <div class="row">
+            <div class="case" id="c1l10"></div>
+            <div class="case" id="c2l10"></div>
+            <div class="case" id="c3l10"></div>
+            <div class="case" id="c4l10"></div>
+            <div class="case" id="c5l10"></div>
+            <div class="case" id="c6l10"></div>
+            <div class="case" id="c7l10"></div>
+            <div class="case" id="c8l10"></div>
+            <div class="case" id="c9l10"></div>
+            <div class="case" id="c10l10"></div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="libs/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+body {
+    text-align: center;
+    font-size: 18px;
+}
+
+#titre {
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: lightseagreen;
+    margin: 0 0 0 10px;
+}
+
+#titre p {
+    margin: 8px 0;
+}
+
+#userMsg {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: lightseagreen;
+    color: white;
+}
+
+#userMsg p {
+    padding: 20px;
+    margin: 50px;
+}
+
+#replayDisplay {
+    text-align: center;
+    display: none;
+    margin-bottom: 40px;
+}
+
+#replayDisplay button {
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+#gameDisplay {
+    width: 509px;
+    height: 519px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+}
+
+.case {
+    font-size: 1.6em;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    border: solid 1px black;
+    background-color: lightgrey;
+}
+
+.case p {
+    margin-top: 5px;
+}
