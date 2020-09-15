@@ -128,13 +128,6 @@ $(window).ready(() => {
 
 
 
-
-
-
-
-    console.log(gameArrayTable);
-
-
 // game going on
     $("*").mousedown(function (e) {
         e.preventDefault();
